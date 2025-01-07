@@ -46,6 +46,7 @@ function showAllOverlap() {
     alert("사용자를 최소 2명 추가해주세요.");
     return;
   }
+  console.log(userTimes);
 
   let globalStart = "00:00";
   let globalEnd = "23:59";
