@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>약속 시간 계산기</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+      #output {
+        margin-top: 20px;
+        font-size: 1.2em;
+        color: #333;
+      }
+      .user-inputs {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>약속 시간 계산기</h1>
+    <p>가능한 날짜와 시간을 선택해주세요.</p>
+
+    <div class="user-inputs">
+      <input type="date" id="date" />
+      <br /><br />
+      <input type="time" id="starttime" />
+      <input type="time" id="endtime" />
+    </div>
+    <button onclick="addUser()">사용자 추가</button>
+    <br />
+    <br />
+    <button onclick="showAllOverlap()">모든 사용자가 가능한 시간</button>
+    <button onclick="showMostOverlap()">가장 많은 사용자가 가능한 시간</button>
+
+    <div id="output"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
